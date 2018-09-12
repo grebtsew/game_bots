@@ -95,7 +95,7 @@ def missions():
 
         #fix auto pop
         for k in range(10):
-            pyautogui.click(694,519) # open
+            pyautogui.click(694,500) # open
             wait(3,1)
             pyautogui.click(694,519) # open
             wait(2,1)
@@ -118,6 +118,9 @@ def missions():
 
         wait(600, 30)
 
+
+def mouse_clicker():
+    pass
 
 def main():
     wait(1,1) # random upstart
