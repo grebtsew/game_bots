@@ -13,19 +13,20 @@ This file contains core functions used in bots for specific games
 bot_running = True
 
 
-def hook(k_func = None):
+def hook(k_func = None, delay = 1):
     global bot_running
     while bot_running:
 
         # Press key always if "ctrl+k" is pressed
         if(keyboard.is_pressed('ctrl+k')):
 
-            k_func()
+            if k_func is not None:
+                k_func()
 
         if(keyboard.is_pressed('esc')):
             print(str(datetime.datetime.now()) +" close program, will wait for waiting threads before closing!")
             bot_running = False
-            exit(1)
+            exit(delay)
 
 
 def perform(func):

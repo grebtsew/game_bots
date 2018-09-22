@@ -10,11 +10,12 @@ It uses gui functions like keypresses and mousecontroll, to controll the bot we 
 Test the commands "esc" to exit program and "ctrl + k" to start autoclicks.
 
 ## Diablo 3
-My first thought was, how would you play diablo3 if you only have one hand?
+My first thought was, how would you play diablo3 if you only have one hand? Or if you don't have a mouse.
 This bot works as a key pressing macro that auto activates abilities for you so that one hand
 on the mouse is all that is needed. You need to use appropriate abilities and builds!
-So just buy this game from blizzard and start it and activate the bot with "ctrl + k",
-exit with "esc".
+So just buy this game from blizzard and start it. Then activate the bot you need.
+The result is a program that controll skills for you and let you controll the character with
+the arrow buttons.
 
 ## Guild wars 2
 Same as diablo 3 this bot helps with function activation. I also added a testing auto farm function.
