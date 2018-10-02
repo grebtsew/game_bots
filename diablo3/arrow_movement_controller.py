@@ -2,6 +2,8 @@ import math
 import pyautogui
 import sys
 import keyboard
+from threading import Thread
+
 sys.path.append("..")
 
 import core_bot as bot
@@ -20,8 +22,6 @@ charpos_y = 540
 radius = 120
 
 def main():
-    thread = Thread(target=bot.hook, args=(None,))
-    thread.start()
 
 
     while bot.bot_running:
@@ -58,7 +58,7 @@ def main():
         #click
         if pressed:
             pyautogui.click(charpos_x + (radius * math.cos(angle)), charpos_y + (radius * math.sin(angle)))
-            bot.wait(0.1,0.1)
+            bot.wait(0.01,0.1)
 
 if __name__ == "__main__":
     main()

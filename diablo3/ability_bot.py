@@ -15,18 +15,17 @@ For each build you will need change the cooldowns below
 This program will press 1,2,3,4 and right button for you
 '''
 
-cooldown_rc = 1; # right click
-cooldown_1 = 1;
-cooldown_2 = 1;
-cooldown_3 = 1;
-cooldown_4 = 1;
+cooldown_rc = 5; # right click
+cooldown_1 = 0.51234;
+cooldown_2 = 2;
+cooldown_3 = 100;
+cooldown_4 = 3;
 
 def right_click(delay):
     while bot.bot_running:
         pyautogui.click(button='right')
         #print("pressed right")
         bot.wait(delay, 0.1)
-
 
 def ability(value):
     keyboard.press_and_release(value)
