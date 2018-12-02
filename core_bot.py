@@ -11,7 +11,7 @@ This file contains core functions used in bots for specific games
 '''
 
 bot_running = True
-
+dynamic_time = True;
 
 def hook(k_func = None, delay = 1):
     global bot_running
@@ -35,7 +35,8 @@ def perform(func):
     counter = 0
     while bot_running:
         func(counter)
-        counter += 1
+        if dynamic_time:
+            counter += 1
 
 
 class WINDOW_SIZE_STRUCT():

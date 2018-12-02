@@ -29,10 +29,16 @@ Usage:
 
 Game window size: 1260, 900
 '''
+
 WINDOW_SIZE = bot.WINDOW_SIZE_STRUCT()
 WINDOW_SIZE.x = 1260
 WINDOW_SIZE.y = 900
 bot_running = True
+
+
+WINDOW_OFFSET = bot.WINDOW_SIZE_STRUCT()
+WINDOW_OFFSET.x = 0;
+WINDOW_OFFSET.y = 0;
 
 
 def next_level(delay):
@@ -41,7 +47,7 @@ def next_level(delay):
     bot.wait(30+delay, 3+delay)
 
 def scale_point(x, y):
-    return (int(x/1260.0 * WINDOW_SIZE.x), (int(y/900.0 * WINDOW_SIZE.y)))
+    return (WINDOW_OFFSET.x + int(x/1260.0 * WINDOW_SIZE.x), WINDOW_OFFSET.y + (int(y/900.0 * WINDOW_SIZE.y)))
 
 def upgrade_all( delay):
     print(str(datetime.datetime.now()) +" upgrade")
@@ -163,8 +169,8 @@ def main():
     bot.wait(100,1) # random upstart
 
     #missions
-    thread = Thread(target= bot.perform, args=(missions,))
-    thread.start()
+    #thread = Thread(target= bot.perform, args=(missions,))
+    #thread.start()
 
 if __name__ == "__main__":
     main()
