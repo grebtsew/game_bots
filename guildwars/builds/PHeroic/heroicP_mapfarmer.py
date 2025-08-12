@@ -4,6 +4,11 @@ import time
 
 import pyautogui
 
+"""
+Apply heroic refrain, and also walk around the map, trying to kill all
+"""
+
+
 def get_pixel_color(x, y):
     """
     Returns the RGB color of the pixel at (x, y) on the screen.
@@ -44,9 +49,9 @@ if __name__=="__main__":
     
     i = 0
     max=7
-    stage=33
+    stage=25
     xp= 120
-    yp= 310
+    yp= 270
     k=0
     d=0
     wanted_color=(180, 175, 152)
