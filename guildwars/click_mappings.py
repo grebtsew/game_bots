@@ -8,7 +8,9 @@ points = [
  ("Resource Start ", (985, 1315)),
  ("Resource 2 ", (985+18, 1315)),
  ("Resource last ", (985+18*33, 1315)),
- ("Cost 5", (1057, 1315))
+ ("Cost 5", (1057, 1315)),
+ ("Begin challange",(120, 585)),
+ ("target check",(1410,40))
 ]
 
 
