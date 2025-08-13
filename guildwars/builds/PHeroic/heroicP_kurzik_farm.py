@@ -115,8 +115,8 @@ def fight():
         k+=1
         d+=1
         # try find new target
-        keyboard.press(Key.tab)
-        keyboard.release(Key.tab)
+        keyboard.press('c')
+        keyboard.release('c')
         time.sleep(0.2)
         keyboard.press(Key.space)
         keyboard.release(Key.space)
@@ -130,14 +130,7 @@ def fight():
         state="idle"
     elif state=="alone":
         d+=1
-        # Start running
-        keyboard.press('r')
-        keyboard.release('r')
-        time.sleep(2+d+random.uniform(0, 1)    )
-        # turn a little     R
-        keyboard.press('d')
-        time.sleep(0.1+random.uniform(0, 1)) 
-        keyboard.release('d')
+        
         
         state="idle"
 

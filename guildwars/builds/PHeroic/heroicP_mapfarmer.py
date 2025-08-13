@@ -82,7 +82,7 @@ if __name__=="__main__":
                 
                 keyboard.press('8')
                 keyboard.release('8')
-                time.sleep(random.uniform(0,1))
+                time.sleep(1+random.uniform(0,1))
 
 
                 keyboard.press('3')
@@ -116,12 +116,14 @@ if __name__=="__main__":
                 keyboard.press('6')
                 keyboard.release('6')
 
+                # TODO: add search for items! 'ö'
+                
             elif state=="idle":
                 k+=1
                 d+=1
-                # try find new target
-                keyboard.press(Key.tab)
-                keyboard.release(Key.tab)
+                # try find closest target
+                keyboard.press('C')
+                keyboard.release('C')
                 time.sleep(0.2)
                 keyboard.press(Key.space)
                 keyboard.release(Key.space)

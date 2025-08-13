@@ -60,7 +60,7 @@ if __name__=="__main__":
                 
                 keyboard.press('8')
                 keyboard.release('8')
-                time.sleep(random.uniform(0,1))
+                time.sleep(1+random.uniform(0,1))
 
 
                 keyboard.press('3')
