@@ -91,6 +91,10 @@ def click_every_n_seconds(ability):
         start_time += interval
 
 def start_click_schedule(schedule):
+
+    # focus on screen
+    pyautogui.click(x=100, y=100)
+
     for ability in schedule:
         t = threading.Thread(
             target=click_every_n_seconds,

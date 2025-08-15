@@ -8,19 +8,7 @@ Maintain Heroic refrain
 """
 
 
-def get_pixel_color(x, y):
-    """
-    Returns the RGB color of the pixel at (x, y) on the screen.
 
-    Parameters:
-    - x: X-coordinate
-    - y: Y-coordinate
-
-    Returns:
-    - (R, G, B): Tuple of RGB values
-    """
-    pixel_color = pyautogui.screenshot().getpixel((x, y))
-    return pixel_color
 
 def move_mouse_to(x, y, duration=0.2):
     """
@@ -52,29 +40,29 @@ if __name__=="__main__":
               
                 keyboard.press('1')
                 keyboard.release('1')
-                time.sleep(random.uniform(0,1))
+                time.sleep(3+random.uniform(0,1))
                 
                 keyboard.press('2')
                 keyboard.release('2')
-                time.sleep(random.uniform(0,1))
+                time.sleep(3+random.uniform(0,1))
                 
                 keyboard.press('8')
                 keyboard.release('8')
-                time.sleep(1+random.uniform(0,1))
+                time.sleep(3+random.uniform(0,1))
 
 
                 keyboard.press('3')
                 keyboard.release('3')
-                time.sleep(random.uniform(0,1))
+                time.sleep(3+random.uniform(0,1))
                 
                 keyboard.press('7')
                 keyboard.release('7')
-                time.sleep(random.uniform(0,1))
+                time.sleep(3+random.uniform(0,1))
                 
                 
                 keyboard.press('4')
                 keyboard.release('4')
-                time.sleep(random.uniform(0,1))
+                time.sleep(3+random.uniform(0,1))
                  
                 if i == max+1:
                     i = 0
@@ -88,12 +76,12 @@ if __name__=="__main__":
                 keyboard.press('5')
                 keyboard.release('5')
                 
+                time.sleep(2+random.uniform(0,1))
 
-                
                 keyboard.press('6')
                 keyboard.release('6')
-
-                time.sleep(10)
+                time.sleep(2+random.uniform(0,1))
+                
               
     except KeyboardInterrupt:
         print("Avslutat av användaren.")

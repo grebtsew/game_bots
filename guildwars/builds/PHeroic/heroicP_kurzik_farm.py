@@ -24,7 +24,7 @@ i = 0
 max=7
 stage=25
 xp= 120
-yp= 270
+yp= 310
 k=0
 d=0
 wanted_color=(119, 114, 91)
@@ -69,24 +69,29 @@ def fight():
         state="fighting"
         keyboard.press('1')
         keyboard.release('1')
-        time.sleep(random.uniform(0,1))
+        time.sleep(3+random.uniform(0,1))
         
         keyboard.press('2')
         keyboard.release('2')
-        time.sleep(random.uniform(0,1))
+        time.sleep(3+random.uniform(0,1))
         
         keyboard.press('8')
         keyboard.release('8')
-        time.sleep(random.uniform(0,1))
+        time.sleep(3+random.uniform(0,1))
 
+        keyboard.press('c')
+        keyboard.release('c')
+        time.sleep(0.2)
+        keyboard.press(Key.space)
+        keyboard.release(Key.space)
 
         keyboard.press('3')
         keyboard.release('3')
-        time.sleep(random.uniform(0,1))
+        time.sleep(3+random.uniform(0,1))
         
         keyboard.press('7')
         keyboard.release('7')
-        time.sleep(random.uniform(0,1))
+        time.sleep(3+random.uniform(0,1))
         
         
         keyboard.press('4')
@@ -139,8 +144,6 @@ def fight():
 
 
 if __name__=="__main__":
-    
-
     
     import time
 

@@ -3,8 +3,8 @@ from screeninfo import get_monitors
 
 # Example list: [(name, (x, y))]
 points = [
-    ("Player list Start", (120, 270)),
- ("Player2 ", (120, 270+25)),
+    ("Player list Start", (120, 310)),
+ ("Player2 ", (120, 310+25)),
  ("Resource Start ", (985, 1315)),
  ("Resource 2 ", (985+18, 1315)),
  ("Resource last ", (985+18*33, 1315)),

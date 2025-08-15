@@ -40,7 +40,7 @@ if __name__=="__main__":
     max=7
     stage=25
     xp= 120
-    yp= 270
+    yp= 310
  
     print("Startar om 1 sekunder...")
     time.sleep(1)

@@ -42,22 +42,25 @@ if __name__=="__main__":
         "fighting",
         "running"
     ]
+    
+
 
     state = "idle"
-    x= 1120
+    x= 1410
     y = 40
     
     i = 0
     max=7
     stage=25
     xp= 120
-    yp= 270
+    yp= 310
     k=0
     d=0
-    wanted_color=(180, 175, 152)
+    wanted_color=(119, 114, 91)
     print("Startar om 1 sekunder...")
     time.sleep(1)
-
+    # focus main screen
+    pyautogui.click(100,100)
     #move_mouse_to(xp,yp+7*stage)
     #print(get_pixel_color(x,y))
     # exit(0)
@@ -65,7 +68,7 @@ if __name__=="__main__":
         while True:
             #print(get_pixel_color(x,y))
             #dprint(wanted_color)
-            print(f"Current state: {state}")
+            print(f"Current state: {state} {wanted_color} {get_pixel_color(x,y)}")
             if (get_pixel_color(x,y)==wanted_color):
                 d=0
                 # target accessable
@@ -74,29 +77,34 @@ if __name__=="__main__":
                 state="fighting"
                 keyboard.press('1')
                 keyboard.release('1')
-                time.sleep(random.uniform(0,1))
+                time.sleep(3+random.uniform(0,1))
                 
                 keyboard.press('2')
                 keyboard.release('2')
-                time.sleep(random.uniform(0,1))
+                time.sleep(3+random.uniform(0,1))
                 
                 keyboard.press('8')
                 keyboard.release('8')
-                time.sleep(1+random.uniform(0,1))
+                time.sleep(3+random.uniform(0,1))
 
+                keyboard.press('c')
+                keyboard.release('c')
+                time.sleep(0.2)
+                keyboard.press(Key.space)
+                keyboard.release(Key.space)
 
                 keyboard.press('3')
                 keyboard.release('3')
-                time.sleep(random.uniform(0,1))
+                time.sleep(3+random.uniform(0,1))
                 
                 keyboard.press('7')
                 keyboard.release('7')
-                time.sleep(random.uniform(0,1))
+                time.sleep(3+random.uniform(0,1))
                 
                 
                 keyboard.press('4')
                 keyboard.release('4')
-                time.sleep(random.uniform(0,1))
+                time.sleep(3+random.uniform(0,1))
                  
                 if i == max+1:
                     i = 0
@@ -122,8 +130,8 @@ if __name__=="__main__":
                 k+=1
                 d+=1
                 # try find closest target
-                keyboard.press('C')
-                keyboard.release('C')
+                keyboard.press('c')
+                keyboard.release('c')
                 time.sleep(0.2)
                 keyboard.press(Key.space)
                 keyboard.release(Key.space)
