@@ -74,7 +74,7 @@ click_schedule = [
         "cast_time":1,
         "cost":10,
         "priority":2,
-        "offset":8,
+        "offset":18,
         "init":True,
         "doonce":False,
         "req":3
@@ -86,7 +86,7 @@ click_schedule = [
         "cast_time":1,
         "cost":10,
         "priority":2,
-        "offset":10,
+        "offset":20,
         "init":True,
         "doonce":False,
         "req":3
@@ -99,7 +99,7 @@ click_schedule = [
         "cast_time":1,
         "cost":10,
         "priority":2,
-        "offset":12,
+        "offset":22,
         "init":True,
         "doonce":False,
         "req":3
