@@ -60,6 +60,12 @@ def move_mouse_to(x, y, duration=0.2):
 def fight():
     global state,k,d,i
     print(f"Current state: {state}")
+
+    # start klick in case
+    pyautogui.click(x=x_start, y=y_start)
+    keyboard.press('s')
+    keyboard.release('s')
+
   
     if (get_pixel_color(x,y)==wanted_color):
         d=0

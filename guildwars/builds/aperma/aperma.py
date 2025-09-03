@@ -80,7 +80,7 @@ click_schedule = [
         "req":3
     },{
         "key":"5",
-        "interval":24,
+        "interval":48,
         "effect_time":62,
         "rest_time":45,
         "cast_time":1,
